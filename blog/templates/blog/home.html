@@ -13,6 +13,9 @@
       </div>
       <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
       <p class="article-content">{{ post.content }}</p>
+      {% if post.image %}
+      <img src="{{post.image}}" width="200">
+      {% endif %}
     </div>
   </article>
 {% endfor %}
